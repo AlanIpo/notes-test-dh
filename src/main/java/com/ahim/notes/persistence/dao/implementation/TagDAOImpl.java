@@ -4,10 +4,12 @@ import com.ahim.notes.persistence.dao.ITagDAO;
 import com.ahim.notes.persistence.entity.TagEntity;
 import com.ahim.notes.persistence.repository.TagRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.Optional;
 
+@Component
 public class TagDAOImpl implements ITagDAO {
 
     @Autowired

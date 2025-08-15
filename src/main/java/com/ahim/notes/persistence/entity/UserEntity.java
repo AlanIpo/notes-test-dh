@@ -27,7 +27,8 @@ public class UserEntity {
 
     @Column(unique = true)
     private String email;
-    @JsonIgnore
+    @Column(unique = true)
+    private String username;
     private String password;
 
     @Column(name = "is_enabled")

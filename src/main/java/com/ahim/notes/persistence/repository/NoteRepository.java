@@ -1,7 +1,9 @@
 package com.ahim.notes.persistence.repository;
 
 import com.ahim.notes.persistence.entity.NoteEntity;
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface NoteRepository extends CrudRepository<NoteEntity, Long> {
+@Repository
+public interface NoteRepository extends JpaRepository<NoteEntity, Long> {
 }

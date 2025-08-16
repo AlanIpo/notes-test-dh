@@ -2,6 +2,7 @@ package com.ahim.notes.presentation.dto;
 
 import com.ahim.notes.persistence.entity.TagEntity;
 import com.ahim.notes.persistence.entity.UserEntity;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

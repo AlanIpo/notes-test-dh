@@ -126,7 +126,6 @@ public class NoteController {
                         .content(note.getContent())
                         .createdAt(note.getCreatedAt())
                         .updatedAt(note.getUpdatedAt())
-                        .user(note.getUser())
                         .tagSet(note.getTag())
                         .build())
                 .toList();
@@ -145,7 +144,6 @@ public class NoteController {
                         .content(note.getContent())
                         .createdAt(note.getCreatedAt())
                         .updatedAt(note.getUpdatedAt())
-                        .user(note.getUser())
                         .tagSet(note.getTag())
                         .build())
                 .toList();
@@ -164,7 +162,6 @@ public class NoteController {
                         .content(note.getContent())
                         .createdAt(note.getCreatedAt())
                         .updatedAt(note.getUpdatedAt())
-                        .user(note.getUser())
                         .tagSet(note.getTag())
                         .build())
                 .toList();
@@ -183,7 +180,6 @@ public class NoteController {
                         .content(note.getContent())
                         .createdAt(note.getCreatedAt())
                         .updatedAt(note.getUpdatedAt())
-                        .user(note.getUser())
                         .tagSet(note.getTag())
                         .build())
                 .toList();
@@ -202,7 +198,6 @@ public class NoteController {
                         .content(note.getContent())
                         .createdAt(note.getCreatedAt())
                         .updatedAt(note.getUpdatedAt())
-                        .user(note.getUser())
                         .tagSet(note.getTag())
                         .build())
                 .toList();
@@ -221,7 +216,6 @@ public class NoteController {
                         .content(note.getContent())
                         .createdAt(note.getCreatedAt())
                         .updatedAt(note.getUpdatedAt())
-                        .user(note.getUser())
                         .tagSet(note.getTag())
                         .build())
                 .toList();

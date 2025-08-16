@@ -33,7 +33,7 @@ public class NoteEntity {
     @JsonIgnore
     private UserEntity user;
 
-    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinTable(name = "note_tags", joinColumns = @JoinColumn(name = "note_id"), inverseJoinColumns = @JoinColumn(name = "tag_id"))
     private Set<TagEntity> tag = new HashSet<>();
 

@@ -34,4 +34,35 @@ public class NoteDAOImpl implements INoteDAO {
     public void deleteById(Long id) {
         noteRepository.deleteById(id);
     }
+
+    @Override
+    public List<NoteEntity> findAllByUserIdOrderByTitleAsc(Long userId) {
+        return noteRepository.findAllByUserIdOrderByTitleAsc(userId);
+    }
+
+    @Override
+    public List<NoteEntity> findAllByUserIdOrderByTitleDesc(Long userId) {
+        return noteRepository.findAllByUserIdOrderByTitleDesc(userId);
+    }
+
+    @Override
+    public List<NoteEntity> findAllByUserIdOrderByCreatedAtAsc(Long userId) {
+        return noteRepository.findAllByUserIdOrderByCreatedAtAsc(userId);
+    }
+
+    @Override
+    public List<NoteEntity> findAllByUserIdOrderByCreatedAtDesc(Long userId) {
+        return noteRepository.findAllByUserIdOrderByCreatedAtDesc(userId);
+    }
+
+    @Override
+    public List<NoteEntity> findAllByUserIdOrderByUpdatedAtAsc(Long userId) {
+        return noteRepository.findAllByUserIdOrderByUpdatedAtAsc(userId);
+    }
+
+    @Override
+    public List<NoteEntity> findAllByUserIdOrderByUpdatedAtDesc(Long userId) {
+        return noteRepository.findAllByUserIdOrderByUpdatedAtDesc(userId);
+    }
+
 }

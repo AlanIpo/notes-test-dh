@@ -31,7 +31,37 @@ public class NoteServiceImpl implements INoteService {
     }
 
     @Override
-    public void delete(Long id) {
+    public void deleteById(Long id) {
         noteDAO.deleteById(id);
+    }
+
+    @Override
+    public List<NoteEntity> findAllByUserIdOrderByTitleAsc(Long userId) {
+        return noteDAO.findAllByUserIdOrderByTitleAsc(userId);
+    }
+
+    @Override
+    public List<NoteEntity> findAllByUserIdOrderByTitleDesc(Long userId) {
+        return noteDAO.findAllByUserIdOrderByTitleDesc(userId);
+    }
+
+    @Override
+    public List<NoteEntity> findAllByUserIdOrderByCreatedAtAsc(Long userId) {
+        return noteDAO.findAllByUserIdOrderByCreatedAtAsc(userId);
+    }
+
+    @Override
+    public List<NoteEntity> findAllByUserIdOrderByCreatedAtDesc(Long userId) {
+        return noteDAO.findAllByUserIdOrderByCreatedAtDesc(userId);
+    }
+
+    @Override
+    public List<NoteEntity> findAllByUserIdOrderByUpdatedAtAsc(Long userId) {
+        return noteDAO.findAllByUserIdOrderByUpdatedAtAsc(userId);
+    }
+
+    @Override
+    public List<NoteEntity> findAllByUserIdOrderByUpdatedAtDesc(Long userId) {
+        return noteDAO.findAllByUserIdOrderByUpdatedAtDesc(userId);
     }
 }

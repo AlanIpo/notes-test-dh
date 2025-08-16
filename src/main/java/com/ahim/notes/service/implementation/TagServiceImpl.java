@@ -34,4 +34,9 @@ public class TagServiceImpl implements ITagService {
     public void delete(Long id) {
         tagDAO.deleteById(id);
     }
+
+    /*@Override
+    public List<TagEntity> findTagsByUserId(Long userId) {
+        return tagDAO.findTagsByUserId(userId);
+    }*/
 }

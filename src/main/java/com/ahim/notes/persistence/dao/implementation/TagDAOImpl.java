@@ -34,4 +34,9 @@ public class TagDAOImpl implements ITagDAO {
     public void deleteById(Long id) {
         tagRepository.deleteById(id);
     }
+
+    /*@Override
+    public List<TagEntity> findTagsByUserId(Long userId) {
+        return tagRepository.findTagsByUserId(userId);
+    }*/
 }

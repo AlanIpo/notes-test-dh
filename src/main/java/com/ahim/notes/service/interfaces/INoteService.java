@@ -13,6 +13,15 @@ public interface INoteService {
 
     void save(NoteEntity note);
 
-    void delete(Long id);
+    void deleteById(Long id);
+
+    List<NoteEntity> findAllByUserIdOrderByTitleAsc(Long userId);
+    List<NoteEntity> findAllByUserIdOrderByTitleDesc(Long userId);
+
+    List<NoteEntity> findAllByUserIdOrderByCreatedAtAsc(Long userId);
+    List<NoteEntity> findAllByUserIdOrderByCreatedAtDesc(Long userId);
+
+    List<NoteEntity> findAllByUserIdOrderByUpdatedAtAsc(Long userId);
+    List<NoteEntity> findAllByUserIdOrderByUpdatedAtDesc(Long userId);
 
 }

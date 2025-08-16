@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -23,6 +24,9 @@ public class NoteEntity {
 
     private String title;
     private String content;
+
+    private LocalDate createdAt;
+    private LocalDate updatedAt;
 
     @ManyToOne
     @JoinColumn(name = "id_user", nullable = false)
